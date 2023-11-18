@@ -1,0 +1,12 @@
+ISPMS
+Tables --------------------------------------------------------
+
+- Packages - [pid(Pk), pname, ptype, pspeed, fee]
+- Customer - [cid(Pk),cname, caddress, cnid, cemail, cphone, cpassword]
+
+  // ISSUE
+
+- UserPackages - [upid(pk),pname,cemail, cphone, cstatus,currentplan, requestedplan, ptype, pspeed, fee, cdate,caddress, CID(FK)]
+- Employee - [eid(Pk), ename, eaddress, ephone, eemail, designation, salary, resume]
+- Complains - [ComplainID(PK), cname, caddress, cnid, cemail, cphone, issuetype, time, descriptions]
+- Payment - [paymentid(pk),amount, paymentdate, paymenttime, transactionid, paymentmethod, cid(fk)]
